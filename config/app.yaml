@@ -1,0 +1,8 @@
+application: my_go_invest_server 
+version: 1
+runtime: go116
+api_version: go1
+
+handlers:
+- url: /.*
+  script: _go_app

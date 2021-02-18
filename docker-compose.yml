@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  mysql8.0:
+    image: mysql:8.0
+    container_name: MYSQLINVEST8.0
+    ports:
+      - 3380:3306
+    environment:
+      - MYSQL_DATABASE=investdb
+      - MYSQL_USER=alisancho
+      - MYSQL_PASSWORD=frfw4f434r3f44g
+      - MYSQL_ROOT_PASSWORD=joolpass684523rw3eq3e
+      -

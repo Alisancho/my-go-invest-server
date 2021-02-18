@@ -1,0 +1,9 @@
+swagger: "3.1"
+info:
+  title: Hello
+  description: Start
+  version: 1.0.0
+host: localhost
+schemes:
+  - https
+paths:
