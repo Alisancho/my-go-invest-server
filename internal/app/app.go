@@ -1,8 +1,9 @@
 package app
 
 import (
+	"../../internal/delivery/http/v1/handler"
+	todo "../server"
 	"context"
-	todo "github.com/alicancho/my-go-invest-server/internal/server"
 	"log"
 	"os"
 	"os/signal"
@@ -10,10 +11,11 @@ import (
 )
 
 func Run(configPath string) {
+	handles := new(handler.Handler)
 	srv := new(todo.Server)
 
 	go func() {
-		if err := srv.Run("8080"); err != nil {
+		if err := srv.Run("8080", handles.InitRout()); err != nil {
 			log.Fatalf("ERROR OCCURRED WHILE RUNNING: %s", err.Error())
 		}
 	}()
