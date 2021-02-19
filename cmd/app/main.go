@@ -1,7 +1,7 @@
 package main
 
 import (
-	"../../internal/app"
+	"github.com/Alisancho/my-go-invest-server/internal/app"
 )
 
 const configPath = "configs/main"

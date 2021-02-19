@@ -1,9 +1,9 @@
 package app
 
 import (
-	"../../internal/delivery/http/v1/handler"
-	todo "../server"
 	"context"
+	"github.com/Alisancho/my-go-invest-server/internal/delivery/http/v1/handler"
+	todo "github.com/Alisancho/my-go-invest-server/internal/server"
 	"log"
 	"os"
 	"os/signal"
